@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ATP 🎾 Emoji Guide — Top 100</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green: #1a3a2a;
+    --green-mid: #2a5c3f;
+    --lime: #b8f04a;
+    --lime-dim: #8fc436;
+    --cream: #f5f0e8;
+    --cream-dim: #e8e2d6;
+    --text: #1a1a18;
+    --text-muted: #5a5a50;
+    --card-bg: #ffffff;
+    --border: rgba(26,58,42,0.12);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  /* HEADER */
+  header {
+    background: var(--green);
+    color: var(--cream);
+    padding: 2.5rem 2rem 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    border: 60px solid rgba(184,240,74,0.08);
+  }
+  header::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; left: 30%;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    border: 40px solid rgba(184,240,74,0.05);
+  }
+  .header-inner { max-width: 1100px; margin: 0 auto; position: relative; }
+  .header-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--lime);
+    margin-bottom: 0.5rem;
+  }
+  h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: var(--cream);
+  }
+  h1 span { color: var(--lime); }
+  .header-sub {
+    margin-top: 0.75rem;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(245,240,232,0.65);
+    max-width: 480px;
+  }
+  .header-stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .hstat { }
+  .hstat-val {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: var(--lime);
+    line-height: 1;
+  }
+  .hstat-lbl {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: rgba(245,240,232,0.5);
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+
+  /* CONTROLS */
+  .controls-bar {
+    background: var(--green-mid);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  }
+  .controls-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .search-wrap {
+    flex: 1;
+    min-width: 200px;
+    position: relative;
+  }
+  .search-wrap svg {
+    position: absolute;
+    left: 12px; top: 50%;
+    transform: translateY(-50%);
+    width: 16px; height: 16px;
+    stroke: rgba(245,240,232,0.4);
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+  }
+  .search-wrap input {
+    width: 100%;
+    padding: 9px 12px 9px 38px;
+    background: rgba(245,240,232,0.1);
+    border: 1px solid rgba(245,240,232,0.15);
+    border-radius: 8px;
+    color: var(--cream);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .search-wrap input::placeholder { color: rgba(245,240,232,0.35); }
+  .search-wrap input:focus { border-color: var(--lime); }
+  select {
+    padding: 9px 12px;
+    background: rgba(245,240,232,0.1);
+    border: 1px solid rgba(245,240,232,0.15);
+    border-radius: 8px;
+    color: var(--cream);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    padding-right: 28px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='rgba(245,240,232,0.4)' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+  }
+  select option { background: var(--green); color: var(--cream); }
+  .count-badge {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: rgba(245,240,232,0.4);
+    white-space: nowrap;
+    padding: 0 4px;
+  }
+  .count-badge b { color: var(--lime); }
+
+  /* GRID */
+  main { max-width: 1100px; margin: 0 auto; padding: 1.5rem 2rem 4rem; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 10px;
+  }
+
+  /* CARD */
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 14px 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: box-shadow 0.15s, transform 0.15s, border-color 0.15s;
+    cursor: default;
+    animation: fadeUp 0.3s ease both;
+  }
+  .card:hover {
+    box-shadow: 0 4px 20px rgba(26,58,42,0.1);
+    transform: translateY(-1px);
+    border-color: rgba(26,58,42,0.25);
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .rank {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 13px;
+    color: var(--text-muted);
+    min-width: 26px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+  .top3 .rank { color: var(--lime-dim); }
+  .emoji-wrap {
+    font-size: 28px;
+    width: 36px;
+    text-align: center;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+  .info { flex: 1; min-width: 0; }
+  .pname {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.3;
+  }
+  .pcountry {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 2px;
+    font-weight: 300;
+  }
+  .edit-btn {
+    background: none;
+    border: none;
+    font-size: 13px;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 3px 5px;
+    border-radius: 6px;
+    flex-shrink: 0;
+    opacity: 0.5;
+    transition: opacity 0.15s, background 0.15s;
+  }
+  .card:hover .edit-btn { opacity: 1; }
+  .edit-btn:hover { background: var(--cream-dim); }
+
+  /* NO RESULTS */
+  .nores {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--text-muted);
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .nores span { font-size: 2rem; display: block; margin-bottom: 0.75rem; }
+
+  /* MODAL */
+  .modal-bg {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(26,58,42,0.6);
+    z-index: 200;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+  }
+  .modal-bg.open { display: flex; }
+  .modal {
+    background: #fff;
+    border-radius: 16px;
+    padding: 1.5rem;
+    width: 360px;
+    max-width: 94vw;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+    animation: popIn 0.2s ease;
+  }
+  @keyframes popIn {
+    from { opacity: 0; transform: scale(0.94); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+  .modal-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+  .modal-em { font-size: 2rem; }
+  .modal-title { font-size: 15px; font-weight: 500; color: var(--text); }
+  .modal-sub { font-size: 12px; color: var(--text-muted); font-weight: 300; }
+  .modal-section-lbl {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin: 0.75rem 0 0.4rem;
+  }
+  .epicker { display: flex; flex-wrap: wrap; gap: 5px; }
+  .eopt {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 6px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: border-color 0.12s, background 0.12s;
+    line-height: 1;
+  }
+  .eopt:hover { border-color: var(--cream-dim); background: var(--cream); }
+  .eopt.on { border-color: var(--green-mid); background: rgba(26,58,42,0.08); }
+  .custom-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 0.5rem;
+    align-items: center;
+  }
+  .custom-row input {
+    flex: 1;
+    padding: 8px 10px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: inherit;
+    outline: none;
+  }
+  .custom-row input:focus { border-color: var(--green-mid); }
+  .modal-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 1rem;
+    justify-content: flex-end;
+  }
+  .btn {
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-muted);
+    transition: background 0.15s;
+  }
+  .btn:hover { background: var(--cream); }
+  .btn-primary {
+    background: var(--green);
+    color: var(--cream);
+    border-color: var(--green);
+    font-weight: 500;
+  }
+  .btn-primary:hover { background: var(--green-mid); }
+
+  /* FOOTER */
+  footer {
+    background: var(--green);
+    color: rgba(245,240,232,0.4);
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 12px;
+    font-weight: 300;
+  }
+  footer b { color: rgba(245,240,232,0.7); font-weight: 500; }
+
+  @media (max-width: 600px) {
+    header { padding: 1.75rem 1.25rem 1.5rem; }
+    main { padding: 1rem 1rem 3rem; }
+    .controls-bar { padding: 0.75rem 1rem; }
+    .grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+    .card { padding: 10px; gap: 7px; }
+    .emoji-wrap { font-size: 22px; width: 28px; }
+    .pname { font-size: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="header-label">PIF ATP Rankings · April 2026</div>
+    <h1>ATP <span>Emoji</span><br>Guide</h1>
+    <p class="header-sub">Every player in the top 100 — matched to their emoji. Click any card to customise.</p>
+    <div class="header-stats">
+      <div class="hstat"><div class="hstat-val">100</div><div class="hstat-lbl">Players</div></div>
+      <div class="hstat"><div class="hstat-val" id="cnt-countries">30</div><div class="hstat-lbl">Countries</div></div>
+      <div class="hstat"><div class="hstat-val" id="cnt-custom">0</div><div class="hstat-lbl">Custom emojis</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="controls-bar">
+  <div class="controls-inner">
+    <div class="search-wrap">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" id="q" placeholder="Search player or country…" oninput="render()" autocomplete="off">
+    </div>
+    <select id="cf" onchange="render()"><option value="">All countries</option></select>
+    <select id="sf" onchange="render()">
+      <option value="rank">By ranking</option>
+      <option value="name">By name</option>
+    </select>
+    <div class="count-badge"><b id="sc">100</b> players</div>
+  </div>
+</div>
+
+<main>
+  <div class="grid" id="grid"></div>
+</main>
+
+<footer>
+  Rankings data: <b>PIF ATP Tour</b> · April 2026 &nbsp;·&nbsp; Built with ♥ and 🎾 &nbsp;·&nbsp; <span id="sync-status" style="color:rgba(245,240,232,0.45)">Loading…</span> &nbsp;·&nbsp; <button onclick="resetAll()" style="background:none;border:none;color:rgba(245,240,232,0.4);cursor:pointer;font-size:12px;font-family:inherit;text-decoration:underline">Reset to defaults</button>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-bg" id="mbg" onclick="handleBgClick(event)">
+  <div class="modal">
+    <div class="modal-head">
+      <div class="modal-em" id="m-em"></div>
+      <div>
+        <div class="modal-title" id="m-name"></div>
+        <div class="modal-sub" id="m-country"></div>
+      </div>
+    </div>
+    <div class="modal-section-lbl">Quick pick</div>
+    <div class="epicker" id="epicker"></div>
+    <div class="modal-section-lbl">Or type any emoji</div>
+    <div class="custom-row">
+      <input type="text" id="custominp" placeholder="e.g. 🎾" maxlength="4">
+    </div>
+    <div class="modal-actions">
+      <button class="btn" onclick="closeM()">Cancel</button>
+      <button class="btn btn-primary" onclick="saveM()">Save</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const SUGG = ["🎾","🏆","🔥","⚡","💪","👑","🐐","🦁","🤖","🎯","💥","🏔️","🌊","🎸","🏛️","✨","🦅","🐂","🌟","🚀","🦊","🐉","🌍","🌶️","❄️","🧠","🎪","🏄","💫","🐍","🌪️","🎲","🍕","🦘","🌴","🫖","🍁","🐻","🎤","⛈️"];
+
+const PLAYERS = [
+  [1,"Jannik Sinner","🇮🇹 Italy","🔥"],
+  [2,"Carlos Alcaraz","🇪🇸 Spain","⚡"],
+  [3,"Alexander Zverev","🇩🇪 Germany","🗼"],
+  [4,"Novak Djokovic","🇷🇸 Serbia","🐐"],
+  [5,"Felix Auger-Aliassime","🇨🇦 Canada","🍁"],
+  [6,"Ben Shelton","🇺🇸 USA","🏀"],
+  [7,"Taylor Fritz","🇺🇸 USA","🦁"],
+  [8,"Alex De Minaur","🇦🇺 Australia","🦘"],
+  [9,"Lorenzo Musetti","🇮🇹 Italy","🎨"],
+  [10,"Daniil Medvedev","🇷🇺 Russia","🤖"],
+  [11,"Alexander Bublik","🇰🇿 Kazakhstan","🎭"],
+  [12,"Andrey Rublev","🇷🇺 Russia","💥"],
+  [13,"Flavio Cobolli","🇮🇹 Italy","🌶️"],
+  [14,"Jiri Lehecka","🇨🇿 Czech Rep","🦁"],
+  [15,"Casper Ruud","🇳🇴 Norway","🏔️"],
+  [16,"Karen Khachanov","🇷🇺 Russia","🐻"],
+  [17,"Valentin Vacherot","🇲🇨 Monaco","🎲"],
+  [18,"Tommy Paul","🇺🇸 USA","🎸"],
+  [19,"Frances Tiafoe","🇺🇸 USA","🎤"],
+  [20,"Francisco Cerundolo","🇦🇷 Argentina","🌿"],
+  [21,"Learner Tien","🇺🇸 USA","🌟"],
+  [22,"Luciano Darderi","🇮🇹 Italy","☀️"],
+  [23,"Cameron Norrie","🇬🇧 GB","🫖"],
+  [24,"Alejandro Davidovich Fokina","🇪🇸 Spain","🌪️"],
+  [25,"Arthur Fils","🇫🇷 France","🏆"],
+  [26,"Arthur Rinderknech","🇫🇷 France","🐓"],
+  [27,"Jakub Mensik","🇨🇿 Czech Rep","🦅"],
+  [28,"Jack Draper","🇬🇧 GB","⛈️"],
+  [29,"Martin Etcheverry","🇦🇷 Argentina","🐂"],
+  [30,"Corentin Moutet","🇫🇷 France","🦊"],
+  [31,"Joao Fonseca","🇧🇷 Brazil","🌴"],
+  [32,"Brandon Nakashima","🇺🇸 USA","🌊"],
+  [33,"Tallon Griekspoor","🇳🇱 Netherlands","🌷"],
+  [34,"Ugo Humbert","🇫🇷 France","💨"],
+  [35,"Denis Shapovalov","🇨🇦 Canada","🎯"],
+  [36,"Gabriel Diallo","🇨🇦 Canada","🌙"],
+  [37,"Alex Michelsen","🇺🇸 USA","🚀"],
+  [38,"Jaume Munar","🇪🇸 Spain","🌞"],
+  [39,"Holger Rune","🇩🇰 Denmark","🐉"],
+  [40,"Sebastian Korda","🇺🇸 USA","🌊"],
+  [41,"Tomas Machac","🇨🇿 Czech Rep","⚙️"],
+  [42,"Rafael Jodar","🇪🇸 Spain","🌱"],
+  [43,"Alejandro Tabilo","🇨🇱 Chile","🔷"],
+  [44,"Zizou Bergs","🇧🇪 Belgium","🍺"],
+  [45,"Mariano Navone","🇦🇷 Argentina","🦁"],
+  [46,"Adrian Mannarino","🇫🇷 France","🧠"],
+  [47,"Terence Atmane","🇫🇷 France","💫"],
+  [48,"Ethan Quinn","🇺🇸 USA","🎯"],
+  [49,"Nuno Borges","🇵🇹 Portugal","🐓"],
+  [50,"Fabian Marozsan","🇭🇺 Hungary","🦅"],
+  [51,"Marin Cilic","🇭🇷 Croatia","🦁"],
+  [52,"Botic Van De Zandschulp","🇳🇱 Netherlands","🌀"],
+  [53,"Giovanni Mpetshi Perricard","🇫🇷 France","⚡"],
+  [54,"Marton Fucsovics","🇭🇺 Hungary","🔮"],
+  [55,"Daniel Altmaier","🇩🇪 Germany","🌲"],
+  [56,"Alexei Popyrin","🇦🇺 Australia","🌩️"],
+  [57,"Camilo Ugo Carabelli","🇦🇷 Argentina","🤠"],
+  [58,"Ignacio Buse","🇵🇪 Peru","🦙"],
+  [59,"Andres Burruchaga Roman","🇦🇷 Argentina","🐉"],
+  [60,"Yannick Hanfmann","🇩🇪 Germany","🌿"],
+  [61,"Jenson Brooksby","🇺🇸 USA","🤔"],
+  [62,"Lorenzo Sonego","🇮🇹 Italy","🌋"],
+  [63,"Hubert Hurkacz","🇵🇱 Poland","🦅"],
+  [64,"Sebastian Baez","🇦🇷 Argentina","🧱"],
+  [65,"Miomir Kecmanovic","🇷🇸 Serbia","🐺"],
+  [66,"Vit Kopriva","🇨🇿 Czech Rep","🌿"],
+  [67,"Juan Manuel Cerundolo","🇦🇷 Argentina","🌿"],
+  [68,"Hamad Medjedovic","🇷🇸 Serbia","🔶"],
+  [69,"Alexander Blockx","🇧🇪 Belgium","🆕"],
+  [70,"Reilly Opelka","🇺🇸 USA","🗼"],
+  [71,"Raphael Collignon","🇧🇪 Belgium","💎"],
+  [72,"Valentin Royer","🇫🇷 France","🌸"],
+  [73,"Arthur Cazaux","🇫🇷 France","🎭"],
+  [74,"Kamil Majchrzak","🇵🇱 Poland","🦉"],
+  [75,"Thiago Agustin Tirante","🇦🇷 Argentina","🌾"],
+  [76,"Marcos Giron","🇺🇸 USA","🌵"],
+  [77,"Marco Trungelliti","🇦🇷 Argentina","🐝"],
+  [78,"Mattia Bellucci","🇮🇹 Italy","🌊"],
+  [79,"James Duckworth","🇦🇺 Australia","🦆"],
+  [80,"Stefanos Tsitsipas","🇬🇷 Greece","🏛️"],
+  [81,"Jan-Lennard Struff","🇩🇪 Germany","⚡"],
+  [82,"Alexander Shevchenko","🇰🇿 Kazakhstan","🌟"],
+  [83,"Sebastian Ofner","🇦🇹 Austria","🎻"],
+  [84,"Damir Dzumhur","🇧🇦 Bosnia","💎"],
+  [85,"Cristian Garin","🇨🇱 Chile","🌶️"],
+  [86,"Eliot Spizzirri","🇺🇸 USA","⚡"],
+  [87,"Dino Prizmic","🇭🇷 Croatia","🔥"],
+  [88,"Zachary Svajda","🇺🇸 USA","🌪️"],
+  [89,"Aleksandar Vukic","🇦🇺 Australia","🥊"],
+  [90,"Patrick Kypson","🇺🇸 USA","🎯"],
+  [91,"Quentin Halys","🇫🇷 France","🦢"],
+  [92,"Matteo Berrettini","🇮🇹 Italy","🍕"],
+  [93,"Roberto Bautista-Agut","🇪🇸 Spain","🐂"],
+  [94,"Pablo Carreno-Busta","🇪🇸 Spain","🌊"],
+  [95,"Alexandre Muller","🇫🇷 France","🌙"],
+  [96,"Daniel Vallejo Adolfo","🇵🇾 Paraguay","🌿"],
+  [97,"Aleksandar Kovacevic","🇺🇸 USA","🦅"],
+  [98,"Luca van Assche","🇫🇷 France","🌷"],
+  [99,"Martin Landaluce","🇪🇸 Spain","🌱"],
+  [100,"Yibing Wu","🇨🇳 China","🐲"],
+];
+
+const SUPABASE_URL = 'https://gbvhuckcgpxgrujdxgmo.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imdidmh1Y2tjZ3B4Z3J1amR4Z21vIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc2MjUyODQsImV4cCI6MjA5MzIwMTI4NH0.9OqYLzAjBw6dDdTpFhukBnybS4zX8HO02FyKjxcwWXk';
+const HEADERS = {
+  'apikey': SUPABASE_KEY,
+  'Authorization': 'Bearer ' + SUPABASE_KEY,
+  'Content-Type': 'application/json',
+  'Prefer': 'resolution=merge-duplicates'
+};
+
+let assign = {};
+let customSet = new Set();
+let editRank = null, selEm = null;
+
+function setStatus(msg, color) {
+  const el = document.getElementById('sync-status');
+  if (!el) return;
+  el.textContent = msg;
+  el.style.color = color || 'rgba(245,240,232,0.5)';
+}
+
+async function loadSaved() {
+  PLAYERS.forEach(([r,,,e]) => assign[r] = e);
+  setStatus('Loading…');
+  try {
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/emoji_assignments?select=rank,emoji`, { headers: HEADERS });
+    if (!res.ok) throw new Error('fetch failed');
+    const rows = await res.json();
+    rows.forEach(({ rank, emoji }) => {
+      assign[rank] = emoji;
+      const orig = PLAYERS.find(p => p[0] === rank);
+      if (orig && emoji !== orig[3]) customSet.add(rank);
+    });
+    setStatus('✓ Synced');
+  } catch(e) {
+    setStatus('⚠ Could not load from database', '#f0a04a');
+  }
+  render();
+}
+
+async function persist(rank, emoji) {
+  setStatus('Saving…');
+  try {
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/emoji_assignments`, {
+      method: 'POST',
+      headers: HEADERS,
+      body: JSON.stringify({ rank, emoji })
+    });
+    if (!res.ok) throw new Error('save failed');
+    setStatus('✓ Saved');
+  } catch(e) {
+    setStatus('⚠ Could not save', '#f0a04a');
+  }
+}
+
+async function resetAll() {
+  if (!confirm('Reset ALL emojis back to defaults for everyone?')) return;
+  setStatus('Resetting…');
+  try {
+    await fetch(`${SUPABASE_URL}/rest/v1/emoji_assignments?rank=gte.1`, { method: 'DELETE', headers: HEADERS });
+    customSet.clear();
+    PLAYERS.forEach(([r,,,e]) => assign[r] = e);
+    setStatus('✓ Reset done');
+    render();
+  } catch(e) {
+    setStatus('⚠ Reset failed', '#f0a04a');
+  }
+}
+
+function initCountries() {
+  const countries = [...new Set(PLAYERS.map(p => p[2].split(' ').slice(1).join(' ')))].sort();
+  const sel = document.getElementById('cf');
+  countries.forEach(c => {
+    const o = document.createElement('option');
+    o.value = c; o.textContent = c;
+    sel.appendChild(o);
+  });
+  document.getElementById('cnt-countries').textContent = countries.length;
+}
+
+function render() {
+  const q = document.getElementById('q').value.toLowerCase();
+  const cf = document.getElementById('cf').value;
+  const sf = document.getElementById('sf').value;
+  let rows = [...PLAYERS];
+  if (q) rows = rows.filter(p => p[1].toLowerCase().includes(q) || p[2].toLowerCase().includes(q));
+  if (cf) rows = rows.filter(p => p[2].includes(cf));
+  if (sf === 'name') rows.sort((a,b) => a[1].localeCompare(b[1]));
+  document.getElementById('sc').textContent = rows.length;
+  document.getElementById('cnt-custom').textContent = customSet.size;
+  const g = document.getElementById('grid');
+  if (!rows.length) {
+    g.innerHTML = '<div class="nores"><span>🔍</span>No players match your search.</div>';
+    return;
+  }
+  g.innerHTML = '';
+  rows.forEach(([r, n, c], i) => {
+    const card = document.createElement('div');
+    card.className = 'card' + (r <= 3 ? ' top3' : '');
+    card.style.animationDelay = Math.min(i * 0.015, 0.4) + 's';
+    card.innerHTML = `
+      <span class="rank">#${r}</span>
+      <span class="emoji-wrap">${assign[r]}</span>
+      <div class="info">
+        <div class="pname">${n}</div>
+        <div class="pcountry">${c}</div>
+      </div>
+      <button class="edit-btn" onclick="openM(${r}, event)" title="Change emoji">✏️</button>
+    `;
+    g.appendChild(card);
+  });
+}
+
+function openM(rank, e) {
+  e.stopPropagation();
+  editRank = rank;
+  selEm = assign[rank];
+  const pl = PLAYERS.find(p => p[0] === rank);
+  document.getElementById('m-em').textContent = assign[rank];
+  document.getElementById('m-name').textContent = pl[1];
+  document.getElementById('m-country').textContent = pl[2];
+  document.getElementById('custominp').value = '';
+  const pk = document.getElementById('epicker');
+  pk.innerHTML = '';
+  SUGG.forEach(em => {
+    const s = document.createElement('span');
+    s.className = 'eopt' + (em === selEm ? ' on' : '');
+    s.textContent = em;
+    s.onclick = () => {
+      selEm = em;
+      document.querySelectorAll('.eopt').forEach(x => x.classList.remove('on'));
+      s.classList.add('on');
+      document.getElementById('m-em').textContent = em;
+      document.getElementById('custominp').value = '';
+    };
+    pk.appendChild(s);
+  });
+  document.getElementById('mbg').classList.add('open');
+}
+
+function closeM() {
+  document.getElementById('mbg').classList.remove('open');
+  editRank = null;
+}
+
+function saveM() {
+  const cv = document.getElementById('custominp').value.trim();
+  const final = cv || selEm;
+  if (final && editRank) {
+    const orig = PLAYERS.find(p => p[0] === editRank);
+    if (final !== orig[3]) customSet.add(editRank); else customSet.delete(editRank);
+    assign[editRank] = final;
+    persist(editRank, final);
+    render();
+  }
+  closeM();
+}
+
+function handleBgClick(e) {
+  if (e.target === e.currentTarget) closeM();
+}
+
+initCountries();
+loadSaved(); // async — renders after fetch
+</script>
+</body>
+</html>
